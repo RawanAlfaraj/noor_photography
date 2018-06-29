@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Noor Photography</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'slidetext'%>
+     <style>
+     body {
+      position: relative; 
+  }
+  #about-sec {padding-top:150px;height:100%;padding-bottom: 75px}
+  #gallery-sec {padding-top:50px;height:100%;background-color: #f8f8f8;padding-bottom: 75px}
+  #pricing-sec {padding-top:50px;height:100%;padding-bottom: 75px;}
+  #contact-sec {padding-top:50px;height:100%;background-color: #f8f8f8;padding-bottom: 75px}
+  </style>
+
+
+  </head>
+
+  <body>
+    <!-- render navbar -->
+    <%= render "pages/partials/nav" %>
+
+    <!-- about section -->
+    <div id="about-sec" class="container-fluid margin">
+      <!-- render about section -->
+      <%= render "pages/partials/aboutsec" %>
+    </div>
+
+    <!-- gallery section -->
+    <div id="gallery-sec" class="container-fluid">
+      <!-- render gallery section -->
+      <%= render "pages/partials/gallerysec" %>
+    </div>
+
+    <!-- price section -->
+     <div id="pricing-sec" class="container-fluid">
+    <!-- render price section -->
+      <%= render "pages/partials/pricesec" %>
+     </div>
+
+    <!-- contact section -->
+    <div id="contact-sec" class="container-fluid">
+      <%= render "pages/partials/contactsec" %>
+    </div>
+
+
+
+</body>
+</html>

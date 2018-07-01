@@ -93,3 +93,9 @@ figure.thumb-photos:hover > div::before {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
+
+
+@media only screen and (max-width: 768px) {
+  .figures {
+    display: block;
+  }

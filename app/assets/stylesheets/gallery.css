@@ -84,6 +84,7 @@ figure.thumb-photos:hover > div p {
 figure.thumb-photos:hover > div p.left-icon {
   -webkit-transform: translate3d(-25%, -50%, 0);
   transform: translate3d(-10%, -50%, 0);
+  padding: 100px;
 }
 figure.thumb-photos:hover > div::before {
   background: rgba(255, 255, 255, 0);

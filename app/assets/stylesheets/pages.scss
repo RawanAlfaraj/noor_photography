@@ -6,8 +6,10 @@ $main:#F69899;
 $maind:#AD5858;
 
 @font-face {
-  font-family: "arconFont";
-  src: url('/assets/Arcon-Regular');
+  font-family: 'arconFont';
+  src: font-url("/assets/Arcon-Regular");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {

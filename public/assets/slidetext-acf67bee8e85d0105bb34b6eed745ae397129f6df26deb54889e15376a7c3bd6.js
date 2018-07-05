@@ -1,1 +1,0 @@
-$(document).ready(function(){function e(){var e=o.height(),n=o.scrollTop(),t=n+e;$.each(i,function(){var e=$(this),i=e.outerHeight(),o=e.offset().top;n<=o+i&&o<=t?e.addClass("in-view"):e.removeClass("in-view")})}var i=$(".animation-element"),o=$(window);o.on("scroll resize",e),o.trigger("scroll")});

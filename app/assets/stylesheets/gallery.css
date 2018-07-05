@@ -1,5 +1,5 @@
 .figures{
-  display: flex !important;
+  display: flex;
   color: black;
   font-size: 18px;
   width: 100%;
@@ -38,7 +38,7 @@ figure.thumb-photos > div {
   position: absolute;
 }
 figure.thumb-photos > div a  {
-  color: pink;
+  color: #ffffff;
 }
 figure.thumb-photos > div a p {
   font-size: 30px;
@@ -84,7 +84,6 @@ figure.thumb-photos:hover > div p {
 figure.thumb-photos:hover > div p.left-icon {
   -webkit-transform: translate3d(-25%, -50%, 0);
   transform: translate3d(-10%, -50%, 0);
-  padding: 100px;
 }
 figure.thumb-photos:hover > div::before {
   background: rgba(255, 255, 255, 0);

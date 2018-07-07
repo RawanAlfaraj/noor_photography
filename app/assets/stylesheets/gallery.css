@@ -1,0 +1,102 @@
+.figures{
+  display: flex;
+  color: black;
+  font-size: 18px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+
+figure.thumb-photos {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 400px;
+  max-height: 250px;
+  width: 100%;
+  background: #000000;
+  text-align: center;
+
+
+
+
+}
+figure.thumb-photos img {
+  max-width: 100%;
+  opacity: 1;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+figure.thumb-photos > div {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+}
+figure.thumb-photos > div a  {
+  color: pink;
+}
+figure.thumb-photos > div a p {
+  font-size: 30px;
+  opacity: 0;
+  top: 50%;
+  position: relative;
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  display: inline-block;
+}
+figure.thumb-photos > div a p.left-icon {
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+}
+figure.thumb-photos > div::before {
+  position: absolute;
+  top: 30px;
+  right: 50%;
+  bottom: 30px;
+  left: 50%;
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+  border-right: 1px solid rgba(255, 255, 255, 0.8);
+  content: '';
+  opacity: 0;
+  background-color: #ffffff;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+figure.thumb-photos:hover img {
+  opacity: 0.35;
+}
+figure.thumb-photos:hover > div p {
+  opacity: 0.9;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+figure.thumb-photos:hover > div p.left-icon {
+  -webkit-transform: translate3d(-25%, -50%, 0);
+  transform: translate3d(-10%, -50%, 0);
+}
+figure.thumb-photos:hover > div::before {
+  background: rgba(255, 255, 255, 0);
+  left: 30px;
+  right: 30px;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .figures {
+    display: block;
+  }
+}

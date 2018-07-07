@@ -1,5 +1,5 @@
 .figures{
-  display: inline-block;
+  display: inline-flex;
   color: black;
   font-size: 18px;
   width: 100%;

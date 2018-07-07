@@ -54,7 +54,7 @@ figure.thumb-photos > div a p {
 figure.thumb-photos > div a p.left-icon {
   -webkit-transform: translate3d(0, -50%, 0);
   transform: translate3d(0, -50%, 0);
-  padding: 100px;
+  padding: 100%;
 }
 figure.thumb-photos > div::before {
   position: absolute;

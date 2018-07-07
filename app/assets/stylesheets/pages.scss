@@ -1,0 +1,224 @@
+@font-face {
+  font-family: 'arconFont';
+  src: font-url("/assets/Arcon-Regular");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #F69899 !important;
+  font-family: "arconFont" !important;
+  overflow: auto;
+  text-align: center;
+}
+
+body a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.25s cubic-bezier(0.64, 0.57, 0.67, 1.53);
+}
+
+body .section-title {
+  padding-top: 60px;
+  padding-bottom: 55px;
+}
+
+body .content {
+  display: flex;
+  position: absolute;
+  top: 500%;
+  left: 30px;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 1000;
+  color: #F69899;
+  line-height: 32px;
+}
+
+body .content a {
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+body .content a:hover {
+  color: #AD5858;
+}
+
+body .underbackground {
+  background-color: #f8f8f8;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 120px !important;
+}
+
+body .underbackground .header {
+  background-color: #f8f8f8;
+  height: 50px;
+  display: flex;
+  position: fixed;
+  top: 50px;
+  left: 30px;
+  right: 20px;
+  transform: translateY(-50%);
+  color: #F69899 !important;
+  line-height: 24px !important;
+}
+
+body .underbackground .header a {
+  font-size: 18px;
+  padding: 0 10px !important;
+}
+
+body .underbackground .header a:hover {
+  color: #AD5858 !important;
+}
+
+body .underbackground .header .title {
+  flex-grow: 1 !important;
+  text-align: left;
+  position: static;
+}
+
+body .underbackground .header .title a {
+  font-size: 32px;
+  background: -webkit-linear-gradient(270deg, #F69899, #CA5858);
+  color: #ff6364;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body .underbackground .header .title a:hover {
+  background: -webkit-linear-gradient(270deg, #AD5858, #CCB5B5);
+  color: #ff6364;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body .backgrounds .background {
+  position: absolute;
+  height: 20px;
+  left: 0px;
+  right: 0px;
+  top: 120px;
+}
+
+body .backgrounds .background .head {
+  position: absolute;
+  bottom: 100%;
+  left: 0px;
+  right: 0px;
+  height: 20px;
+}
+
+body .backgrounds .background.layer-3 {
+  background-color: #FAF0F0;
+  animation: bg 2s ease-in-out infinite;
+  top: 110px;
+}
+
+body .backgrounds .background.layer-3 .head {
+  background: url(https://i.koya.io/grapefruitwave_3.svg);
+  background-position: -60px 0px;
+}
+
+body .backgrounds .background.layer-2 {
+  background-color: #FBD7D7;
+  animation: bg 2s ease-in-out infinite;
+  top: 114px;
+  animation-delay: -0.5s;
+}
+
+body .backgrounds .background.layer-2 .head {
+  background: url(https://i.koya.io/grapefruitwave_2.svg);
+  background-position: -40px 0px;
+}
+
+body .backgrounds .background.layer-1 {
+  height: 30px;
+  background-color: #F69899;
+  animation-delay: -1s;
+}
+
+body .backgrounds .background.layer-1 .head {
+  background: url(https://i.koya.io/grapefruitwave_1.svg);
+}
+
+body section.content {
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  right: 220px;
+  color: #fff;
+}
+
+body section.content h1, body section.content h2, body section.content h3, body section.content h4, body section.content h5, body section.content h6, body section.content p {
+  margin: 0;
+  font-weight: 400;
+}
+
+body section.content h1 {
+  font-size: 32px;
+}
+
+.navbar-fixed-top {
+  border-width: 0 !important;
+}
+
+nav {
+  height: 80px;
+}
+
+@keyframes bg {
+  0%, 100% {
+    transform: translateY(12px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+}
+
+.icon-bar {
+  background: #a94442 !important;
+}
+
+.navbar-toggle {
+  background: #fcd7d8 !important;
+}
+
+@media (max-width: 767px) {
+  /* CSS goes here */
+  .title {
+    flex-grow: 1 !important;
+    text-align: center !important;
+  }
+
+  .title a {
+    font-size: 20px !important;
+  }
+}
+
+.navbar-collapse a {
+  font-size: 18px !important;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  border-radius: 17px;
+  padding-top: 1px !important;
+  padding-bottom: 3px !important;
+}
+
+#myNavbar {
+  border-radius: 15px;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  border-radius: 15px;
+  background-color: #f2dede7d !important;
+}
+
+.ion, .ionicons, .ion-social-instagram:before {
+  display: contents !important;
+}

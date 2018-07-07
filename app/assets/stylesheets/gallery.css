@@ -1,4 +1,5 @@
 .figures{
+  display: inline-block;
   color: black;
   font-size: 18px;
   width: 100%;
@@ -53,6 +54,7 @@ figure.thumb-photos > div a p {
 figure.thumb-photos > div a p.left-icon {
   -webkit-transform: translate3d(0, -50%, 0);
   transform: translate3d(0, -50%, 0);
+  padding: 100px;
 }
 figure.thumb-photos > div::before {
   position: absolute;
@@ -83,7 +85,6 @@ figure.thumb-photos:hover > div p {
 figure.thumb-photos:hover > div p.left-icon {
   -webkit-transform: translate3d(-25%, -50%, 0);
   transform: translate3d(-10%, -50%, 0);
-  padding: 100;
 }
 figure.thumb-photos:hover > div::before {
   background: rgba(255, 255, 255, 0);

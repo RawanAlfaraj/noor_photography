@@ -24,7 +24,7 @@
           <img src="https://preview.ibb.co/cTufno/04af0a07_f9fb_49ea_9ed3_7554173a624c.jpg" alt="sample32"/>
           <!-- thumb text link -->
           <div>
-            <a href="#"><p class="left-icon">Outdoor</p></a>
+            <a href="#" data-toggle="modal" data-target="#myModalOutdoor"><p class="left-icon">Outdoor</p></a>
           </div>      
         </figure>
 
@@ -37,7 +37,7 @@
       <img src="https://preview.ibb.co/bSwFL8/IMG_1219.jpg" alt="sample32"/>
       <!-- thumb text link -->
       <div>
-        <a href="#"><p class="left-icon">Birthdays</p></a>
+        <a href="#" data-toggle="modal" data-target="#myModalBirthday" ><p class="left-icon">Birthdays</p></a>
       </div>      
     </figure>
 
@@ -47,7 +47,7 @@
       <img src="https://image.ibb.co/fgOvL8/90ee0b4d_faf2_4709_84b5_988a2067d54e.jpg" alt="sample32"/>
       <!-- thumb text link -->
       <div>
-        <a href="#"><p class="left-icon">Graduations</p></a>
+        <a href="#" data-toggle="modal" data-target="#myModalGraduation"><p class="left-icon">Graduations</p></a>
       </div>      
     </figure>
     </div>
@@ -63,6 +63,30 @@
   <div class="modal-dialog">
     <!-- render carsoul (modal content) -->
     <%= render "pages/partials/modal-partials/indoor-partial" %>
+  </div>
+</div>
+
+<!-- trigger modal for figure 1: outdoor -->
+<div class="modal fade" id="myModalOutdoor" role="dialog">
+  <div class="modal-dialog">
+    <!-- render carsoul (modal content) -->
+    <%= render "pages/partials/modal-partials/outdoor-partial" %>
+  </div>
+</div>
+
+<!-- trigger modal for figure 1: birthday -->
+<div class="modal fade" id="myModalBirthday" role="dialog">
+  <div class="modal-dialog">
+    <!-- render carsoul (modal content) -->
+    <%= render "pages/partials/modal-partials/birthday-partial" %>
+  </div>
+</div>
+
+<!-- trigger modal for figure 1: indoor -->
+<div class="modal fade" id="myModalGraduation" role="dialog">
+  <div class="modal-dialog">
+    <!-- render carsoul (modal content) -->
+    <%= render "pages/partials/modal-partials/graduation-partial" %>
   </div>
 </div>
 

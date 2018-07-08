@@ -1,5 +1,5 @@
 .figures{
-  display: flex;
+  display: inline-flex;
   color: black;
   font-size: 18px;
   width: 100%;
@@ -54,6 +54,7 @@ figure.thumb-photos > div a p {
 figure.thumb-photos > div a p.left-icon {
   -webkit-transform: translate3d(0, -50%, 0);
   transform: translate3d(0, -50%, 0);
+  padding: 50%;
 }
 figure.thumb-photos > div::before {
   position: absolute;
@@ -99,3 +100,4 @@ figure.thumb-photos:hover > div::before {
   .figures {
     display: block;
   }
+}

@@ -16,10 +16,6 @@ class PagesController < ApplicationController
   def contact
   end
 
-  def index
-    @contact = Page.new(params[:page])
-  end
-
     def create
     @contact = Page.new(params[:page])
     @contact.request = request
@@ -27,12 +23,13 @@ class PagesController < ApplicationController
       if @contact.deliver
         # re-initialize Home object for cleared form
         @contact = Page.new
-        #format.html { render 'pages/index'}
+        #format.html { render 'home'}
+        format.html { render(:text => " implemented") }
         format.js   { flash.now[:success] = @message = "Thank you for your message. I'll get back to you soon!" }
       else
-        #format.html { render 'pages/index' }
+        format.html { render 'home' }
         format.js   { flash.now[:error] = @message = "Message did not send." }
-      end
+     end
     end
   end
 end

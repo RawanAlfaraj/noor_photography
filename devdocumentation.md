@@ -8,3 +8,5 @@ https://stackoverflow.com/a/17803266
 * Precompile everytime after editing CSS and JS by running
 RAILS_ENV=production bundle exec rake assets:precompile
 then add, commit to git and deploy
+* Heroku custom domain tutorial: https://www.lewagon.com/blog/buying-a-domain-on-namecheap-and-pointing-it-to-heroku
+* Export Google form: http://stefano.brilli.me/google-forms-html-exporter/

@@ -1,0 +1,2 @@
+module ContactHomeHelper
+end

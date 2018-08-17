@@ -1,35 +1,11 @@
 <div class="animation-element slide-left">
   <h1 class="section-title">Contact</h1>
-
-
-
-
-  
-<%= form_tag("/search", method: "get") do %>
-  <%= label_tag(:q, "Search for:") %>
-  <%= text_field_tag(:q) %>
-  <%= submit_tag("Search") %>
-<% end %>
-  
           
-                      <h3>Using CSS to style an HTML Form</h3>
+                      <h1>This is my one page app!</h1>
+  <div id="contact">
+    <%= render 'pages/partials/contact_form' %>
+  </div>
 
-                      <div>
-                        <form action="/action_page.php">
-                          <label for="fname">First Name</label>
-                          <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-                          <label for="lname">Last Name</label>
-                          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-                          <label for="country">Country</label>
-                          <select id="country" name="country">
-                            <option value="australia">Australia</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
-                          </select>
-                        
-                          <input type="submit" value="Submit">
-                        </form>
-                      </div>
                     </div>

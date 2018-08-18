@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root 'pages#home'
   #root      'contact_home#index'
-  
+
   resources :pages, only: [:home, :index, :create]
 
   get 'pages/about'

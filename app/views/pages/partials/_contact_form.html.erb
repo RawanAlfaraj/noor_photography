@@ -1,5 +1,5 @@
 <%= form_for @contact do |f| %>
-    <div class="col-md-6">
+    <div class="col-md-6 contact-align-center ">
         <%= f.label :name %></br>
         <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
 
@@ -15,7 +15,7 @@
         <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
       </div>
 
-      <%= f.submit 'Send Message', class: 'btn btn-primary' %>
+      <%= f.submit 'Send Message', class: 'btn contact-button' %>
     </div>
   <% end %>
   <div class="col-md-6" id="flash-message">

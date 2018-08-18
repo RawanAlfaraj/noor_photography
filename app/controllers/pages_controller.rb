@@ -4,6 +4,10 @@ class PagesController < ApplicationController
      @contact = Page.new(params[:page])
   end
 
+  def updatePage
+     @contact = Page.new(params[:page])
+  end
+
   def about
   end
 
@@ -23,7 +27,7 @@ class PagesController < ApplicationController
       if @contact.deliver
         # re-initialize Home object for cleared form
         @contact = Page.new
-        format.html { render 'pages'}
+        format.html { render 'home'}
         format.html { render(:text => " implemented") }
         format.js   { flash.now[:success] = @message = "Thank you for your message. I'll get back to you soon!" }
       else

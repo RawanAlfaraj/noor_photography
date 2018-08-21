@@ -16,3 +16,11 @@ command:
 bundle exec rake assets:precompile
 sourcs: https://stackoverflow.com/questions/12719541/css-loading-locally-but-not-in-heroku-for-a-rails-app
 ##
+
+
+
+To update:
+$bundle exec rake assets:precompile
+$git add . 
+$git commit -m "msg" 
+$git push heroku master

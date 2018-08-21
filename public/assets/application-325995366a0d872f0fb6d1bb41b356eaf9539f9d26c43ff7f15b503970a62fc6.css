@@ -1,0 +1,880 @@
+/* line 1, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/about.sass */
+.info {
+  font-family: "Raleway", Arial, sans-serif bold;
+  color: black;
+  font-size: 18px;
+  width: 100%;
+  max-width: 1000px;
+  display: inline-table;
+}
+
+/* line 9, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/about.sass */
+.contente {
+  display: inline-block;
+  margin: auto;
+  width: 100%;
+  position: relative;
+}
+
+/* make all photo edges visible */
+/* line 17, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/about.sass */
+.about-margin {
+  padding-left: 5px;
+  padding-bottom: 22px;
+  padding-top: 22px;
+  padding-right: 12px;
+}
+
+/* line 23, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/about.sass */
+.about-top-margin {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* paragraph settings and styling */
+/* line 29, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/about.sass */
+.about-paragraph {
+  font-size: 20px;
+  padding-top: 4%;
+  padding-right: 10%;
+}
+
+/* line 34, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/about.sass */
+.col-right {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid white;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* line 42, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/about.sass */
+.col-right-overlay {
+  width: 100%;
+  height: 100%;
+  left: -1%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  box-sizing: border-box;
+  border: 1px solid white;
+  -webkit-transform: rotate(3deg) scale(1.01);
+  -ms-transform: rotate(3deg) scale(1.01);
+  transform: rotate(-5deg) scale(1.01);
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 57, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/about.sass */
+  .about-paragraph {
+    font-size: 20px;
+  }
+
+  /* line 59, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/about.sass */
+  .about-top-margin {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  /* line 64, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/about.sass */
+  .about-paragraph {
+    font-size: 18px;
+    padding: 0;
+  }
+
+  /* line 67, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/about.sass */
+  .about-top-margin {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+// Place all the styles related to the ContactHome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+a@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  background-color: black;
+  color: white;
+}
+.contact-form-text-area {
+  color: black;
+}
+.hidden { display: none; }
+.alert-error {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+font-size: .8em;
+}
+
+.alert-alert {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+font-size: .8em;
+}
+
+.alert-success {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: center;
+font-size: .8em;
+}
+
+.alert-notice {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+font-size: .8em;
+}
+.figures{
+  display: flex;
+  color: black;
+  font-size: 18px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+
+figure.thumb-photos {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 400px;
+  max-height: 250px;
+  width: 100%;
+  background: #000000;
+  text-align: center;
+
+
+
+
+}
+figure.thumb-photos img {
+  max-width: 100%;
+  opacity: 1;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+figure.thumb-photos > div {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+}
+figure.thumb-photos > div a  {
+  color: pink;
+}
+figure.thumb-photos > div a p {
+  font-size: 30px;
+  opacity: 0;
+  top: 50%;
+  position: relative;
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  display: inline-block;
+}
+figure.thumb-photos > div a p.left-icon {
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+  padding: 50%;
+}
+figure.thumb-photos > div::before {
+  position: absolute;
+  top: 30px;
+  right: 50%;
+  bottom: 30px;
+  left: 50%;
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+  border-right: 1px solid rgba(255, 255, 255, 0.8);
+  content: '';
+  opacity: 0;
+  background-color: #ffffff;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+figure.thumb-photos:hover img {
+  opacity: 0.35;
+}
+figure.thumb-photos:hover > div p {
+  opacity: 0.9;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+figure.thumb-photos:hover > div p.left-icon {
+  -webkit-transform: translate3d(-25%, -50%, 0);
+  transform: translate3d(-10%, -50%, 0);
+}
+figure.thumb-photos:hover > div::before {
+  background: rgba(255, 255, 255, 0);
+  left: 30px;
+  right: 30px;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .figures {
+    display: block;
+  }
+}
+@font-face {
+  font-family: "arconFont";
+  src: url(/assets/Arcon-Regular);
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 8, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+body {
+  background-color: #F69899 !important;
+  font-family: "arconFont" !important;
+  overflow: auto;
+  text-align: center;
+}
+/* line 13, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+body a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.25s cubic-bezier(0.64, 0.57, 0.67, 1.53);
+}
+/* line 17, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+body .section-title {
+  padding-top: 60px;
+  padding-bottom: 55px;
+}
+/* line 20, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+body .content {
+  display: flex;
+  position: absolute;
+  top: 500%;
+  left: 30px;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 1000;
+  color: #F69899;
+  line-height: 32px;
+}
+/* line 30, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+body .content a {
+  font-size: 18px;
+  padding: 0 10px;
+}
+/* line 33, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+body .content a:hover {
+  color: #AD5858;
+}
+/* line 35, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+body .underbackground {
+  background-color: #f8f8f8;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 120px !important;
+}
+/* line 42, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+body .underbackground .header {
+  background-color: #f8f8f8;
+  height: 50px;
+  display: flex;
+  position: fixed;
+  top: 50px;
+  left: 30px;
+  right: 20px;
+  transform: translateY(-50%);
+  color: #F69899 !important;
+  line-height: 24px !important;
+}
+/* line 53, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+body .underbackground .header a {
+  font-size: 18px;
+  padding: 0 10px !important;
+}
+/* line 56, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+body .underbackground .header a:hover {
+  color: #AD5858 !important;
+}
+/* line 58, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+body .underbackground .header .title {
+  flex-grow: 1 !important;
+  text-align: left;
+  position: static;
+}
+/* line 62, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+body .underbackground .header .title a {
+  font-size: 32px;
+  background: -webkit-linear-gradient(270deg, #F69899, #CA5858);
+  color: #ff6364;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* line 68, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+body .underbackground .header .title a:hover {
+  background: -webkit-linear-gradient(270deg, #AD5858, #CCB5B5);
+  color: #ff6364;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* line 73, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+body .backgrounds .background {
+  position: absolute;
+  height: 20px;
+  left: 0px;
+  right: 0px;
+  top: 120px;
+}
+/* line 79, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+body .backgrounds .background .head {
+  position: absolute;
+  bottom: 100%;
+  left: 0px;
+  right: 0px;
+  height: 20px;
+}
+/* line 85, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+body .backgrounds .background.layer-3 {
+  background-color: #FAF0F0;
+  animation: bg 2s ease-in-out infinite;
+  top: 110px;
+}
+/* line 89, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+body .backgrounds .background.layer-3 .head {
+  background: url(https://i.koya.io/grapefruitwave_3.svg);
+  background-position: -60px 0px;
+}
+/* line 92, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+body .backgrounds .background.layer-2 {
+  background-color: #FBD7D7;
+  animation: bg 2s ease-in-out infinite;
+  top: 114px;
+  animation-delay: -0.5s;
+}
+/* line 97, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+body .backgrounds .background.layer-2 .head {
+  background: url(https://i.koya.io/grapefruitwave_2.svg);
+  background-position: -40px 0px;
+}
+/* line 100, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+body .backgrounds .background.layer-1 {
+  height: 30px;
+  background-color: #F69899;
+  animation-delay: -1s;
+}
+/* line 104, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+body .backgrounds .background.layer-1 .head {
+  background: url(https://i.koya.io/grapefruitwave_1.svg);
+}
+/* line 106, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+body section.content {
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  right: 220px;
+  color: #fff;
+}
+/* line 112, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+body section.content h1, body section.content h2, body section.content h3, body section.content h4, body section.content h5, body section.content h6, body section.content p {
+  margin: 0;
+  font-weight: 400;
+}
+/* line 115, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+body section.content h1 {
+  font-size: 32px;
+}
+
+/* line 118, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+.navbar-fixed-top {
+  border-width: 0 !important;
+}
+
+/* line 121, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+nav {
+  height: 80px;
+}
+
+@keyframes bg {
+  0%, 100% {
+    transform: translateY(12px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+}
+/* line 132, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+.icon-bar {
+  background: #a94442 !important;
+}
+
+/* line 135, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+.navbar-toggle {
+  background: #fcd7d8 !important;
+}
+
+@media (max-width: 767px) {
+  /* line 139, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+  .title {
+    flex-grow: 1 !important;
+    text-align: center !important;
+  }
+  /* line 142, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+  .title a {
+    font-size: 20px !important;
+  }
+}
+/* line 145, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+.navbar-collapse a {
+  font-size: 18px !important;
+}
+
+/* line 148, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+.navbar-default .navbar-nav > .active > a {
+  border-radius: 17px;
+  padding-top: 1px !important;
+  padding-bottom: 3px !important;
+}
+/* line 152, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+.navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  border-radius: 17px;
+  padding-top: 1px !important;
+  padding-bottom: 3px !important;
+}
+
+/* line 157, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+#myNavbar {
+  border-radius: 15px;
+}
+
+/* line 161, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  border-radius: 15px;
+  background-color: #f2dede7d !important;
+}
+
+/* line 165, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+.ion, .ionicons, .ion-social-instagram:before {
+  display: contents !important;
+}
+
+/* line 171, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+.contact-form-text {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 40px !important;
+  padding: 7px 20px;
+}
+
+/* line 177, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+.contact-form-text-paragraph {
+  width: 50%;
+  height: 50px;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 40px !important;
+  padding: 7px 20px;
+}
+
+/* line 185, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+.contact-form-text-area {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 40px !important;
+  padding: 7px 20px;
+  float: right;
+}
+
+@media (max-width: 480px) {
+  /* line 193, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+  .contact-form-text-area {
+    margin-right: -80%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 196, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+  .contact-form-text-area {
+    margin-right: -85%;
+    width: 200%;
+  }
+}
+@media (min-width: 1025px) {
+  /* line 200, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+  .contact-form-text-area {
+    margin-right: -25%;
+    width: 150%;
+  }
+}
+/* line 204, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+.hidden {
+  display: none;
+}
+
+/* line 206, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+.alert-error {
+  background-color: #F2DEDE;
+  border-color: #eed3d7;
+  color: #b94a48;
+  text-align: left;
+  font-size: 0.8em;
+}
+
+/* line 214, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+.alert-alert {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  text-align: left;
+  font-size: 0.8em;
+}
+
+/* line 222, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+/* line 230, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+.alert-notice {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+  text-align: left;
+  font-size: 0.8em;
+}
+
+/* line 240, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+.contact-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+/* line 244, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+.contact-button {
+  color: #f8f8f8;
+  text-decoration: none;
+  padding: 7px 20px;
+  border-radius: 40px !important;
+  font-size: 0.75em;
+  font-weight: 800;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: #F19A99;
+  margin: 15px;
+}
+
+/* line 256, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+.contact-button a:hover {
+  background-color: #E7E7E7;
+  color: #F19A99;
+}
+
+@media (min-width: 992px) {
+  /* line 262, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+  .contact-align-center {
+    width: 100% !important;
+  }
+}
+/* line 266, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+.field {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 15px;
+}
+
+/* line 272, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+.field-text {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 15px;
+}
+
+/* line 278, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+label {
+  display: inline !important;
+  width: 150px;
+  max-width: 140% !important;
+  text-align: center;
+  left: 0;
+  top: 0;
+  transition: all 0.2s linear;
+  color: #999;
+  font-size: 10px;
+}
+
+/* line 289, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+.book-label {
+  width: 150px;
+  max-width: 140% !important;
+  text-align: center;
+  left: 0;
+  top: 0;
+  transition: all 0.2s linear;
+  color: #999;
+  font-size: 20px !important;
+}
+
+/* line 299, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+.input-booking {
+  width: 15px !important;
+}
+
+/* line 302, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+input {
+  font-size: 13px !important;
+  margin-top: 15px;
+  border: 0;
+  border-bottom: 1px solid pink;
+  padding: 5px 5px;
+}
+/* line 308, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+input:invalid + label {
+  top: 3px;
+  opacity: 0;
+}
+/* line 311, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+input:valid + label {
+  opacity: 1;
+  top: 0;
+}
+/* line 314, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+input:focus {
+  outline: none;
+  border-color: #F19A99;
+}
+/* line 316, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+input:focus + label {
+  color: #33A;
+}
+
+@media (min-width: 767px) {
+  /* line 321, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+  input {
+    width: 200px;
+    font-size: 14px !important;
+  }
+}
+/* line 326, /Users/rawan/Documents/projects/Noor's website/noor_photography/app/assets/stylesheets/pages.sass */
+textarea {
+  resize: none;
+}
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:800);
+.plans {
+  color: black;
+  font-size: 18px;
+  width: 100%;
+  max-width: 1000px;
+  display: inline-table;
+}
+.plans .plan {
+  display: inline-block;
+  margin: auto;
+  width: 25%;
+  position: relative;
+  background-color: #F3C9CA;
+  border: 1px solid #ABABAB;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+.plans .plan:hover,
+.plans .plan.hover {
+  background-color: #F19A99;
+}
+.plans .plan:hover i,
+.plans .plan.hover i {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.plans * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+.plans header {
+  position: relative;
+  padding: 20px 10px;
+}
+.plans header i {
+  font-size: 56px;
+  margin: 0 15px;
+  color: #f8f8f8;
+  display: inline-block;
+  float: left;
+}
+.plans .plan-title {
+  top: 0;
+  font-weight: 800;
+  margin: 10px 0 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.plans .plan-cost {
+  margin: 0;
+  opacity: 0.3;
+  text-align: left;
+}
+.plans .plan-price {
+  font-weight: 800;
+  font-size: 1.3em;
+}
+.plans .plan-type {
+  opacity: 0.8;
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+.plans .plan-features {
+  padding: 0;
+  margin: 0 0 40px;
+  text-align: center;
+  list-style: outside none none;
+  font-size: 0.8em;
+  text-align: left;
+}
+.plans .plan-features li {
+  padding: 5px 5%;
+  font-weight: 500;
+  opacity: 0.5;
+  border-left: 5px solid #F19A99;
+  margin: 2px 20px;
+}
+.plans .plan-select {
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+.plans .plan-select a {
+  color: #f8f8f8;
+  text-decoration: none;
+  padding: 15px 20px;
+  margin: 20px;
+  border-radius: 40px;
+  font-size: 0.75em;
+  font-weight: 800;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: #F19A99;
+}
+.plans .plan-select a:hover {
+  background-color: #E7E7E7;
+  color: #F19A99;
+}
+.plans .featured {
+  margin-top: -10px;
+  background-color: #F19A99;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.plans .featured .plan-select a {
+  margin: 30px 20px;
+}
+@media only screen and (max-width: 768px) {
+  .plans .plan {
+    width: 40%;
+  }
+  .plans .plan-title,
+  .plans .plan-select a {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .plans .plan-select a,
+  .plans .featured .plan-select a {
+    margin: 20px;
+  }
+  .plans .featured {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .plans .plan {
+    width: 100%;
+  }
+}
+
+.m-cont{
+  overflow: hidden;
+}
+/* center price elements */
+.main-container {
+  float: left;
+  position: relative;
+  left: 50%;
+}
+.fixer-container {
+  float: left;
+  position: relative;
+  left: -50%;
+}
+
+
+
+
+/*animation element*/
+
+
+.animation-element {
+  opacity: 0;
+  position: relative;
+}
+/*animation element sliding left*/
+
+.animation-element.slide-left {
+  opacity: 0;
+  -moz-transition: all 700ms linear;
+  -webkit-transition: all 700ms linear;
+  -o-transition: all 700ms linear;
+  transition: all 700ms linear;
+  -moz-transform: translate3d(-100px, 0px, 0px);
+  -webkit-transform: translate3d(-100px, 0px, 0px);
+  -o-transform: translate(-100px, 0px);
+  -ms-transform: translate(-100px, 0px);
+  transform: translate3d(-100px, 0px, 0px);
+}
+
+.animation-element.slide-left.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+

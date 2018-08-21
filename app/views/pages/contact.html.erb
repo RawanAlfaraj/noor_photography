@@ -1,2 +1,147 @@
-<h1>Pages#contact</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>
+
+<!doctype html>
+
+<head>
+    <title>Request Appointment</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'slidetext'%>
+
+
+     <style>
+     body {
+      position: relative; 
+  }
+  </style>
+</head>
+
+
+<body>
+
+    <%= render "pages/partials/navcontact" %>
+
+<div style="width: 50%; margin: auto; padding-top: 160px; padding-bottom: 60px; background-color: white; ">
+<form action="https://docs.google.com/forms/d/e/1FAIpQLSduOAFpbH6HE-pIQfEqE9VWjKHxiwBdPSifYCLE_lqw1H7xJw/formResponse"
+      target="_self"
+      id="bootstrapForm"
+      method="POST">
+        <h2>Noor Photography - Request an appointment <br><small>Please fill the following information and I will contact you soon</small></h2>
+        <label for=emailAddress class='book-label'>Email:</label>
+        <div class="form-group">
+            <input id="emailAddress" type="email" name="emailAddress" class=" contact-form-text" required>
+        </div>
+
+
+    <!-- Field type: "short" id: "522138177" -->
+        <label for=386171015 class='book-label'>Name:</label>
+        <div class="form-group">
+            <input id="386171015" type="text" name="entry.386171015" class=" contact-form-text" required>
+        </div>
+
+
+    <!-- Field type: "paragraph" id: "1300108843" -->
+        <label for=386171015 class='book-label'>Photoshoot location:</label>
+        <div class="form-group">
+            <p class="help-block">please provide country, state, and address of the desired photoshoot location</p>
+            <textarea id="1001999306" name="entry.1001999306" class=" contact-form-text-paragraph" required></textarea>
+        </div>
+
+
+    <!-- Field type: "short" id: "521050231" -->
+        <label for=1772407992 class='book-label'>Phone Number:</label>
+        <div class="form-group">
+            <input id="1772407992" type="text" name="entry.1772407992" class=" contact-form-text" >
+        </div>
+
+
+    <!-- Field type: "choices" id: "2045773852" -->
+        <label for=2045773852 class='book-label'>Event:</label>
+        <div class="form-group">
+            <div class="radio">
+                <label>
+                    <input class="input-booking" type="radio" name="entry.1581561334" value="Birthday" required>
+                    Birthday
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input class="input-booking" type="radio" name="entry.1581561334" value="Graduation" required>
+                    Graduation
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input class="input-booking" type="radio" name="entry.1581561334" value="__other_option__" required>
+                </label>
+                <input type="text" name="entry.1581561334.other_option_response" placeholder="other?" class="contact-form-text">
+            </div>
+        </div>
+
+
+    <!-- Field type: "choices" id: "1592212379" -->
+        <label for=1592212379 class='book-label'>Preferred contact way:</label>
+        <div class="form-group">
+            <div class="radio">
+                <label>
+                    <input class="input-booking" type="radio" name="entry.1907030918" value="Phone call" required>
+                    Phone call
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input class="input-booking" type="radio" name="entry.1907030918" value="Email" required>
+                    Email
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input class="input-booking" type="radio" name="entry.1907030918" value="Text" required>
+                    Text
+                </label>
+            </div>
+        </div>
+
+
+    <!-- Field type: "date" id: "1199098093" -->
+        <label for=1199098093 class='book-label'>Date:</label>
+        <div class="form-group">
+            <input type="date" id="2086128619_date" placeholder="8/20/2018" class="">
+        </div>
+
+
+    <!-- Field type: "paragraph" id: "880467507" -->
+        <label for=880467507 class='book-label'>Other information:</label>
+        <div class="form-group">
+            <textarea id="830540816" name="entry.830540816" class=" contact-form-text-paragraph" ></textarea>
+        </div>
+
+    <input type="hidden" name="fvv" value="1">
+    <input type="hidden" name="fbzx" value="7693277594044125005">
+    <!--
+        CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
+        This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
+        Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
+        We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
+    -->
+    <input type="hidden" name="pageHistory" value="0">
+
+    <input class="btn contact-button" type="submit" value="Send request">
+</form>
+
+</div>
+
+<!-- Optional JavaScript -->
+     <!-- Animate -->
+  </body>
+</html>
+

@@ -182,6 +182,13 @@ nav
   border-radius: 40px !important
   padding: 7px 20px
 
+@media (max-width: 480px)
+  .contact-form-text-paragraph
+    width: 80% !important
+    height: 60px
+  .book-label 
+    font-size: 10px 
+
 .contact-form-text-area
   color: rgba(0, 0, 0, 0.6)
   background-color: rgba(0, 0, 0, 0.02)
@@ -326,4 +333,60 @@ input
 textarea
   resize: none
 
-// radio buttons
+.booking-body
+  width: 50%
+  margin: auto
+  padding-top: 160px
+  padding-bottom: 60px
+  background-color: #f8f8f8
+
+@media (max-width: 480px)
+  .booking-body
+    width: 85% !important
+
+// NOOR ABOUT NAME
+
+
+
+svg
+  display: block
+  font: 6.5em 'Montserrat'
+  width: 370px
+  height: 120px
+  margin: 0 auto
+  padding-right: 40px
+
+@media (max-width: 480px)
+  svg
+    width: 355px !important
+    padding-left: 40px
+
+.text-copy
+  fill: none
+  stroke: white
+  stroke-dasharray: 6% 29%
+  stroke-width: 5px
+  stroke-dashoffset: 0%
+  animation: stroke-offset 5.5s infinite linear
+  &:nth-child(1)
+    stroke: #4D163D
+    animation-delay: -1
+  &:nth-child(2)
+    stroke: #840037
+    animation-delay: -2s
+  &:nth-child(3)
+    stroke: #BD0034
+    animation-delay: -3s
+  &:nth-child(4)
+    stroke: #CAEAF5
+    animation-delay: -4s
+  &:nth-child(5)
+    stroke: white
+    animation-delay: -5s
+  &:nth-child(5)
+    stroke: white
+    animation-delay: -5s
+
+@keyframes stroke-offset
+  100%
+    stroke-dashoffset: -35%

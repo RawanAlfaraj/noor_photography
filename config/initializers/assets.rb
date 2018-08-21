@@ -15,4 +15,3 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 Rails.application.config.assets.precompile += %w( scrollnav.js )
 Rails.application.config.assets.precompile += %w( slidetext.js )
-Rails.application.config.assets.precompile += %w( booking.js )
